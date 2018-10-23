@@ -50,7 +50,7 @@ func createInterface(file *os.File, ifPattern string, kind DevKind, meta bool) (
 		req.Flags |= iffnopi
 	}
 	/*
-		如果IFF_NO_PI标志没有被设置，每一帧格式如下：
+		濡傛灉IFF_NO_PI鏍囧織娌℃湁琚缃紝姣忎竴甯ф牸寮忓涓嬶細
 		Flags [2 bytes]
 		Proto [2 bytes]
 		Raw protocol(IP, IPv6, etc) frame.
