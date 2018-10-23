@@ -4,8 +4,8 @@ import (
 	"os"
 )
 
-func openDevice(ifPattern string) (*os.File, error) {
-	file, err := os.OpenFile("/dev/" + ifPattern, os.O_RDWR, 0)
+func openDevice(ifPattern string, useMytun bool) (*os.File, error) {
+	file, err := os.OpenFile("/dev/"+ifPattern, os.O_RDWR, 0)
 	return file, err
 }
 
